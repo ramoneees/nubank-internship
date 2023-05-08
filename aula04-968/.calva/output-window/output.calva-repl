@@ -1,0 +1,339 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Aborting jack-in. No project type selected.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /Users/ramoneees/Documents/ada/estagio-nubank/aula04-968 ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
+; Using host:port 127.0.0.1:60951 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+nil
+clj꞉aula04-968.core꞉>  ; Use `alt+enter` to evaluate
+clj꞉aula04-968.core꞉> 
+; Jack-in done.
+clj꞉aula04-968.core꞉> 
+nil
+nil
+clj꞉aula04-968.core꞉> 
+(class nil)
+nil
+clj꞉aula04-968.core꞉> 
+(class 10)
+java.lang.Long
+clj꞉aula04-968.core꞉> 
+(class 10N)
+clojure.lang.BigInt
+clj꞉aula04-968.core꞉> 
+(class 10M)
+java.math.BigDecimal
+clj꞉aula04-968.core꞉> 
+(class 9.5)
+java.lang.Double
+clj꞉aula04-968.core꞉> 
+(= 1 1.0 1M)
+false
+clj꞉aula04-968.core꞉> 
+(== 1 1.0 1M)
+true
+clj꞉aula04-968.core꞉> 
+"Hello world"
+"Hello world"
+clj꞉aula04-968.core꞉> 
+(class "Hello world")
+java.lang.String
+clj꞉aula04-968.core꞉> 
+(.toUpperCase "Hello World")
+"HELLO WORLD"
+clj꞉aula04-968.core꞉> 
+(clojure.string/upper-case "Hello World")
+"HELLO WORLD"
+clj꞉aula04-968.core꞉> 
+(char "x")
+; Execution error (ClassCastException) at aula04-968.core/eval7853 (form-init3816981542832783359.clj:72).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉aula04-968.core꞉> 
+(char x)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:76:1).
+; Unable to resolve symbol: x in this context
+clj꞉aula04-968.core꞉> 
+(char 1)
+\
+clj꞉aula04-968.core꞉> 
+(class 'my-keword)
+clojure.lang.Symbol
+clj꞉aula04-968.core꞉> 
+(class :my-keword)
+clojure.lang.Keyword
+clj꞉aula04-968.core꞉> 
+(def home "hey")
+#'aula04-968.core/home
+clj꞉aula04-968.core꞉> 
+home
+"hey"
+clj꞉aula04-968.core꞉> 
+(def mapa {:a 1 "b" 2})
+#'aula04-968.core/mapa
+clj꞉aula04-968.core꞉> 
+(get mapa "b")
+2
+clj꞉aula04-968.core꞉> 
+(get mapa :a)
+1
+clj꞉aula04-968.core꞉> 
+("b" mapa)
+; Execution error (ClassCastException) at aula04-968.core/eval7866 (form-init3816981542832783359.clj:104).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉aula04-968.core꞉> 
+(:a mapa)
+1
+clj꞉aula04-968.core꞉> 
+(defn teest [mapa]
+  (:a mapa))
+#'aula04-968.core/teest
+clj꞉aula04-968.core꞉> 
+(teest {:a #(println "hellor world")})
+#function[aula04-968.core/eval7871/fn--7872]
+clj꞉aula04-968.core꞉> 
+(defn teest [mapa]
+  ((:a mapa)))
+#'aula04-968.core/teest
+clj꞉aula04-968.core꞉> 
+(defn teest [mapa]
+  ((:a mapa)))
+#'aula04-968.core/teest
+clj꞉aula04-968.core꞉> 
+(teest {:a #(println "hellor world")})
+hellor world
+nil
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if (= mood "feliz")
+    "Que bom que você está feliz"
+    "Problema seu"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "feliz")
+"Que bom que você está feliz"
+clj꞉aula04-968.core꞉> 
+(mood "triste")
+"Problema seu"
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if mood
+    (str "Que bom que você está " mood)
+    "Problema seu"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "puto")
+"Que bom que você está puto"
+clj꞉aula04-968.core꞉> 
+(mood 234)
+"Que bom que você está 234"
+clj꞉aula04-968.core꞉> 
+(mood :jhahah)
+"Que bom que você está :jhahah"
+clj꞉aula04-968.core꞉> 
+(mood nil)
+"Problema seu"
+clj꞉aula04-968.core꞉> 
+(mood false)
+"Problema seu"
+clj꞉aula04-968.core꞉> 
+(mood {})
+"Que bom que você está {}"
+clj꞉aula04-968.core꞉> 
+(mood "")
+"Que bom que você está "
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if (clojure.string/blank? mood)
+    (str "Que bom que você está " mood)
+    "Problema seu"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "")
+"Que bom que você está "
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if (not (clojure.string/blank? mood))
+    (str "Que bom que você está " mood)
+    "Problema seu"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "")
+"Problema seu"
+clj꞉aula04-968.core꞉> 
+(mood "hahah")
+"Que bom que você está hahah"
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if (not (clojure.string/blank? mood))
+    (println "Uma mensagem motivacional")
+    (str "Que bom que você está " mood)
+    "Problema seu"))
+; Syntax error compiling if at (src/aula04_968/core.clj:4:3).
+; Too many arguments to if
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if (not (clojure.string/blank? mood))
+    (do
+      (println "Uma mensagem motivacional")
+      (str "Que bom que você está " mood))
+    "Problema seu"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(if-let [mood true]
+  mood
+  "Nada não")
+true
+clj꞉aula04-968.core꞉> 
+(if-let [mood false]
+  mood
+  "Nada não")
+"Nada não"
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (if-not (clojure.string/blank? mood)
+    (do
+      (println "Uma mensagem motivacional")
+      (str "Que bom que você está " mood))
+    "Problema seu"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "hahah")\
+; Syntax error reading source at (REPL:225:1).
+; EOF while reading character
+clj꞉aula04-968.core꞉> (mood "hehe")
+Uma mensagem motivacional
+"Que bom que você está hehe"
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (when (clojure.string/blank? mood)
+    (println "Uma mensagem motivacional")
+    (str "Que bom que você está " mood)))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "hehe")
+nil
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (when-not (clojure.string/blank? mood)
+    (println "Uma mensagem motivacional")
+    (str "Que bom que você está " mood)))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "hehe")
+Uma mensagem motivacional
+"Que bom que você está hehe"
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (case mood
+    "feliz" (str "Feliz por te ver feliz ")
+    "triste" (str "Alegria de pobre dura pouco")
+    "ansioso" "Rivotril ta na promoção"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "hehe")
+; Execution error (IllegalArgumentException) at aula04-968.core/mood (form-init3816981542832783359.clj:4).
+; No matching clause: hehe
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (try (case mood
+    "feliz" (str "Feliz por te ver feliz ")
+    "triste" (str "Alegria de pobre dura pouco")
+    "ansioso" "Rivotril ta na promoção")
+       (catch IllegalArgumentException e
+         "Tem esse mood aqui não irmão")))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "hehe")
+"Tem esse mood aqui não irmão"
+clj꞉aula04-968.core꞉> 
+(defn mood [mood]
+  (case mood
+    "feliz" (str "Feliz por te ver feliz ")
+    "triste" (str "Alegria de pobre dura pouco")
+    "ansioso" "Rivotril ta na promoção"
+    "Tem esse mood aqui não irmão"))
+#'aula04-968.core/mood
+clj꞉aula04-968.core꞉> 
+(mood "hehe")
+"Tem esse mood aqui não irmão"
+clj꞉aula04-968.core꞉> 
+(mood "triste")
+"Alegria de pobre dura pouco"
+clj꞉aula04-968.core꞉> 
+(mood "feliz")
+"Feliz por te ver feliz "
+clj꞉aula04-968.core꞉> 
+(defn aaaaaa [valor1 valor2]
+  (cond
+    (not (= valor1 valor2)) (* valor1 valor2)
+    (= 0 (mod valor1 valor2)) (/ valor1 valor2)))
+#'aula04-968.core/aaaaaa
+clj꞉aula04-968.core꞉> 
+(aaaaaa 1 10)
+10
+clj꞉aula04-968.core꞉> 
+(aaaaaa 2 4)
+8
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 10)
+1
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 "10")
+; Execution error (ClassCastException) at aula04-968.core/aaaaaa (form-init3816981542832783359.clj:13).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 18)(defn aaaaaa [valor1 valor2]
+  (cond
+    (= valor1 valor2) (* valor1 valor2)
+    (= 0 (mod valor1 valor2)) (/ valor1 valor2)))
+#'aula04-968.core/aaaaaa
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 18)
+nil
+clj꞉aula04-968.core꞉> 
+(defn aaaaaa [valor1 valor2]
+  (cond
+    (= valor1 valor2) (* valor1 valor2)
+    (= 0 (mod valor1 valor2)) (/ valor1 valor2)
+    :else (str "pegou nada")))
+#'aula04-968.core/aaaaaa
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 18)
+"pegou nada"
+clj꞉aula04-968.core꞉> 
+(defn aaaaaa [valor1 valor2]
+  (cond-> {}
+    (= valor1 valor2) (assoc :condicao-1 (* valor1 valor2))
+    (= 0 (mod valor1 valor2)) (assoc :condicao-2 (/ valor1 valor2))))
+#'aula04-968.core/aaaaaa
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 18)
+{}
+clj꞉aula04-968.core꞉> 
+(aaaaaa 10 10)
+{:condicao-1 100, :condicao-2 1}
+clj꞉aula04-968.core꞉> 

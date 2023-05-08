@@ -1,0 +1,304 @@
+(clojure.pprint/pprint
+ (doseq [nome ["Luis" "Juliana" "Brenda" "Yasmin" "Thais" "Ramon"]
+         motivacoes ["É demais" "Nota 10 " " Uma Joia Rara" "Um alecrim Dourado" "Um doce de côco"  "o melhor de todos os tempos"]
+         desmotivacional ["Não tomou banho" "Não escovou os dentes" "Não é o primo que deu certo na vida" "Já ta namorando? "]]
+   (do
+     (println nome " " motivacoes)
+     (println nome " " desmotivacional))))
+Luis   É demais
+Luis   Não tomou banho
+Luis   É demais
+Luis   Não escovou os dentes
+Luis   É demais
+Luis   Não é o primo que deu certo na vida
+Luis   É demais
+Luis   Já ta namorando?
+Luis   Nota 10
+Luis   Não tomou banho
+Luis   Nota 10
+Luis   Não escovou os dentes
+Luis   Nota 10
+Luis   Não é o primo que deu certo na vida
+Luis   Nota 10
+Luis   Já ta namorando?
+Luis    Uma Joia Rara
+Luis   Não tomou banho
+Luis    Uma Joia Rara
+Luis   Não escovou os dentes
+Luis    Uma Joia Rara
+Luis   Não é o primo que deu certo na vida
+Luis    Uma Joia Rara
+Luis   Já ta namorando?
+Luis   Um alecrim Dourado
+Luis   Não tomou banho
+Luis   Um alecrim Dourado
+Luis   Não escovou os dentes
+Luis   Um alecrim Dourado
+Luis   Não é o primo que deu certo na vida
+Luis   Um alecrim Dourado
+Luis   Já ta namorando?
+Luis   Um doce de côco
+Luis   Não tomou banho
+Luis   Um doce de côco
+Luis   Não escovou os dentes
+Luis   Um doce de côco
+Luis   Não é o primo que deu certo na vida
+Luis   Um doce de côco
+Luis   Já ta namorando?
+Luis   o melhor de todos os tempos
+Luis   Não tomou banho
+Luis   o melhor de todos os tempos
+Luis   Não escovou os dentes
+Luis   o melhor de todos os tempos
+Luis   Não é o primo que deu certo na vida
+Luis   o melhor de todos os tempos
+Luis   Já ta namorando?
+Juliana   É demais
+Juliana   Não tomou banho
+Juliana   É demais
+Juliana   Não escovou os dentes
+Juliana   É demais
+Juliana   Não é o primo que deu certo na vida
+Juliana   É demais
+Juliana   Já ta namorando?
+Juliana   Nota 10
+Juliana   Não tomou banho
+Juliana   Nota 10
+Juliana   Não escovou os dentes
+Juliana   Nota 10
+Juliana   Não é o primo que deu certo na vida
+Juliana   Nota 10
+Juliana   Já ta namorando?
+Juliana    Uma Joia Rara
+Juliana   Não tomou banho
+Juliana    Uma Joia Rara
+Juliana   Não escovou os dentes
+Juliana    Uma Joia Rara
+Juliana   Não é o primo que deu certo na vida
+Juliana    Uma Joia Rara
+Juliana   Já ta namorando?
+Juliana   Um alecrim Dourado
+Juliana   Não tomou banho
+Juliana   Um alecrim Dourado
+Juliana   Não escovou os dentes
+Juliana   Um alecrim Dourado
+Juliana   Não é o primo que deu certo na vida
+Juliana   Um alecrim Dourado
+Juliana   Já ta namorando?
+Juliana   Um doce de côco
+Juliana   Não tomou banho
+Juliana   Um doce de côco
+Juliana   Não escovou os dentes
+Juliana   Um doce de côco
+Juliana   Não é o primo que deu certo na vida
+Juliana   Um doce de côco
+Juliana   Já ta namorando?
+Juliana   o melhor de todos os tempos
+Juliana   Não tomou banho
+Juliana   o melhor de todos os tempos
+Juliana   Não escovou os dentes
+Juliana   o melhor de todos os tempos
+Juliana   Não é o primo que deu certo na vida
+Juliana   o melhor de todos os tempos
+Juliana   Já ta namorando?
+Brenda   É demais
+Brenda   Não tomou banho
+Brenda   É demais
+Brenda   Não escovou os dentes
+Brenda   É demais
+Brenda   Não é o primo que deu certo na vida
+Brenda   É demais
+Brenda   Já ta namorando?
+Brenda   Nota 10
+Brenda   Não tomou banho
+Brenda   Nota 10
+Brenda   Não escovou os dentes
+Brenda   Nota 10
+Brenda   Não é o primo que deu certo na vida
+Brenda   Nota 10
+Brenda   Já ta namorando?
+Brenda    Uma Joia Rara
+Brenda   Não tomou banho
+Brenda    Uma Joia Rara
+Brenda   Não escovou os dentes
+Brenda    Uma Joia Rara
+Brenda   Não é o primo que deu certo na vida
+Brenda    Uma Joia Rara
+Brenda   Já ta namorando?
+Brenda   Um alecrim Dourado
+Brenda   Não tomou banho
+Brenda   Um alecrim Dourado
+Brenda   Não escovou os dentes
+Brenda   Um alecrim Dourado
+Brenda   Não é o primo que deu certo na vida
+Brenda   Um alecrim Dourado
+Brenda   Já ta namorando?
+Brenda   Um doce de côco
+Brenda   Não tomou banho
+Brenda   Um doce de côco
+Brenda   Não escovou os dentes
+Brenda   Um doce de côco
+Brenda   Não é o primo que deu certo na vida
+Brenda   Um doce de côco
+Brenda   Já ta namorando?
+Brenda   o melhor de todos os tempos
+Brenda   Não tomou banho
+Brenda   o melhor de todos os tempos
+Brenda   Não escovou os dentes
+Brenda   o melhor de todos os tempos
+Brenda   Não é o primo que deu certo na vida
+Brenda   o melhor de todos os tempos
+Brenda   Já ta namorando?
+Yasmin   É demais
+Yasmin   Não tomou banho
+Yasmin   É demais
+Yasmin   Não escovou os dentes
+Yasmin   É demais
+Yasmin   Não é o primo que deu certo na vida
+Yasmin   É demais
+Yasmin   Já ta namorando?
+Yasmin   Nota 10
+Yasmin   Não tomou banho
+Yasmin   Nota 10
+Yasmin   Não escovou os dentes
+Yasmin   Nota 10
+Yasmin   Não é o primo que deu certo na vida
+Yasmin   Nota 10
+Yasmin   Já ta namorando?
+Yasmin    Uma Joia Rara
+Yasmin   Não tomou banho
+Yasmin    Uma Joia Rara
+Yasmin   Não escovou os dentes
+Yasmin    Uma Joia Rara
+Yasmin   Não é o primo que deu certo na vida
+Yasmin    Uma Joia Rara
+Yasmin   Já ta namorando?
+Yasmin   Um alecrim Dourado
+Yasmin   Não tomou banho
+Yasmin   Um alecrim Dourado
+Yasmin   Não escovou os dentes
+Yasmin   Um alecrim Dourado
+Yasmin   Não é o primo que deu certo na vida
+Yasmin   Um alecrim Dourado
+Yasmin   Já ta namorando?
+Yasmin   Um doce de côco
+Yasmin   Não tomou banho
+Yasmin   Um doce de côco
+Yasmin   Não escovou os dentes
+Yasmin   Um doce de côco
+Yasmin   Não é o primo que deu certo na vida
+Yasmin   Um doce de côco
+Yasmin   Já ta namorando?
+Yasmin   o melhor de todos os tempos
+Yasmin   Não tomou banho
+Yasmin   o melhor de todos os tempos
+Yasmin   Não escovou os dentes
+Yasmin   o melhor de todos os tempos
+Yasmin   Não é o primo que deu certo na vida
+Yasmin   o melhor de todos os tempos
+Yasmin   Já ta namorando?
+Thais   É demais
+Thais   Não tomou banho
+Thais   É demais
+Thais   Não escovou os dentes
+Thais   É demais
+Thais   Não é o primo que deu certo na vida
+Thais   É demais
+Thais   Já ta namorando?
+Thais   Nota 10
+Thais   Não tomou banho
+Thais   Nota 10
+Thais   Não escovou os dentes
+Thais   Nota 10
+Thais   Não é o primo que deu certo na vida
+Thais   Nota 10
+Thais   Já ta namorando?
+Thais    Uma Joia Rara
+Thais   Não tomou banho
+Thais    Uma Joia Rara
+Thais   Não escovou os dentes
+Thais    Uma Joia Rara
+Thais   Não é o primo que deu certo na vida
+Thais    Uma Joia Rara
+Thais   Já ta namorando?
+Thais   Um alecrim Dourado
+Thais   Não tomou banho
+Thais   Um alecrim Dourado
+Thais   Não escovou os dentes
+Thais   Um alecrim Dourado
+Thais   Não é o primo que deu certo na vida
+Thais   Um alecrim Dourado
+Thais   Já ta namorando?
+Thais   Um doce de côco
+Thais   Não tomou banho
+Thais   Um doce de côco
+Thais   Não escovou os dentes
+Thais   Um doce de côco
+Thais   Não é o primo que deu certo na vida
+Thais   Um doce de côco
+Thais   Já ta namorando?
+Thais   o melhor de todos os tempos
+Thais   Não tomou banho
+Thais   o melhor de todos os tempos
+Thais   Não escovou os dentes
+Thais   o melhor de todos os tempos
+Thais   Não é o primo que deu certo na vida
+Thais   o melhor de todos os tempos
+Thais   Já ta namorando?
+Ramon   É demais
+Ramon   Não tomou banho
+Ramon   É demais
+Ramon   Não escovou os dentes
+Ramon   É demais
+Ramon   Não é o primo que deu certo na vida
+Ramon   É demais
+Ramon   Já ta namorando?
+Ramon   Nota 10
+Ramon   Não tomou banho
+Ramon   Nota 10
+Ramon   Não escovou os dentes
+Ramon   Nota 10
+Ramon   Não é o primo que deu certo na vida
+Ramon   Nota 10
+Ramon   Já ta namorando?
+Ramon    Uma Joia Rara
+Ramon   Não tomou banho
+Ramon    Uma Joia Rara
+Ramon   Não escovou os dentes
+Ramon    Uma Joia Rara
+Ramon   Não é o primo que deu certo na vida
+Ramon    Uma Joia Rara
+Ramon   Já ta namorando?
+Ramon   Um alecrim Dourado
+Ramon   Não tomou banho
+Ramon   Um alecrim Dourado
+Ramon   Não escovou os dentes
+Ramon   Um alecrim Dourado
+Ramon   Não é o primo que deu certo na vida
+Ramon   Um alecrim Dourado
+Ramon   Já ta namorando?
+Ramon   Um doce de côco
+Ramon   Não tomou banho
+Ramon   Um doce de côco
+Ramon   Não escovou os dentes
+Ramon   Um doce de côco
+Ramon   Não é o primo que deu certo na vida
+Ramon   Um doce de côco
+Ramon   Já ta namorando?
+Ramon   o melhor de todos os tempos
+Ramon   Não tomou banho
+Ramon   o melhor de todos os tempos
+Ramon   Não escovou os dentes
+Ramon   o melhor de todos os tempos
+Ramon   Não é o primo que deu certo na vida
+Ramon   o melhor de todos os tempos
+Ramon   Já ta namorando?
+nil
+nil
+clj꞉aula04.core꞉> 
+(for [x [0 1 2 3 4 5]
+      :let [y (* x 3)]
+      :when (even? y)]
+  y)
+(0 6 12)
+clj꞉aula04.core꞉> 
