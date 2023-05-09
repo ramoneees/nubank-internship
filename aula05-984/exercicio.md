@@ -15,3 +15,5 @@ crie uma função que retorne a mensagem de saudação customizada. passe ela co
 passado um mapa {:a 1 :b 2} (valores exemplo, passa outro valor)
 crie mais um elemento no mapa que é a média de todos os outros valores numéricos no mapa
 (usando funções threading)
+Lançar exceção se o valor não for um número
+dizer na exceção qual é a chave do valor errado
