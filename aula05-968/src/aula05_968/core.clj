@@ -54,3 +54,19 @@
          inc
          resto-0-de-100
          str)
+
+(defn media [valor-total-somado contagem-valores]
+  (/ valor-total-somado contagem-valores))
+
+(defn media-mapa [m]
+  (try (as-> m mapa
+         (vals mapa)
+         (reduce + mapa)
+         (media mapa (-> m vals count))
+         (assoc m :media mapa))
+       (catch Exception e
+         (str "essa porra não funciona por causa do "
+              (reduce-kv (fn [m k v]
+                           (if (not (number? v))
+                             (assoc m :broken-key k)
+                             m)) {} m)))))

@@ -43,8 +43,13 @@
 (defn media [valor-total-somado contagem-valores]
   (/ valor-total-somado contagem-valores))
 (defn media-mapa [m]
-  (as-> m mapa
-    (vals mapa)
-    (reduce + mapa)
-    (media mapa (-> m vals count))
-    (assoc m :media mapa)))
+  (try (as-> m mapa
+         (vals mapa)
+         (reduce + mapa)
+         (media mapa (-> m vals count))
+         (assoc m :media mapa))
+       (catch IllegalArgumentException e
+         "essa porra não funciona por causa do " (reduce-kv (fn [m k v]
+                                                              (if (string? v)
+                                                                (assoc m :broken-key k)
+                                                                m)) {} m))))

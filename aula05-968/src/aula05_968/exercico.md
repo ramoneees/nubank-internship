@@ -12,7 +12,7 @@ Ex (descreve-numero 3) ["Positivo" "ìmpar"]
 crie uma função que retorne a mensagem de saudação customizada. passe ela como parâmetro em um map para saudar toda uma lista com nomes e em seguida deixe todos em UPPERCASE
 (usar as->)
 
-passado um mapa {:a 1 :b 2} (valores exemplo, passa outro valor)
+passado um mapa {:a 1 :b "2"} (valores exemplo, passa outro valor)
 crie mais um elemento no mapa que é a média de todos os outros valores numéricos no mapa
 (usando funções threading)
 Lançar exceção se o valor não for um número
