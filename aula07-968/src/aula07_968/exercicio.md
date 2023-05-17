@@ -9,13 +9,13 @@
 
 5 - Crie uma função que receba um mapa com o nome e a idade de uma pessoa e retorne uma string no formato "Nome: <nome>, Idade: <idade>".
 
-6 - Implemente uma função que receba uma lista de números e retorne uma nova lista contendo somente os números que são maiores que 10.
+6 - Implemente uma função que receba uma lista de números e retorne uma nova lista contendo somente os números que são maiores ou igual a 10.
 
-Lembre-se de utilizar a imutabilidade ao resolver esses exercícios, ou seja, evite alterar diretamente os valores das variáveis. Utilize let para criar variáveis locais e def para definir constantes.
+Lembre-se de utilizar a imutabilidade ao resolver esses exercícios, ou seja, evite alterar diretamente os valores das variáveis. Utilize let para criar referencias locais e def para definir constantes.
 
 Bônus
 
 usando a constante gravidade = 10
 
 1 - crie uma função que Calcule a força gravitacional da terra.
-2 -  crie uma função que calcule a força gravitacional entre dois corpos.
+2 - crie uma função que calcule a força gravitacional entre dois corpos.
